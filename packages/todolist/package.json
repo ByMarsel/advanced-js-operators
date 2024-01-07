@@ -1,0 +1,19 @@
+{
+  "name": "advanced-js-operators",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^5.0.8"
+  },
+  "dependencies": {
+    "start-dom-jsx": "^1.0.0-beta.1"
+  }
+}

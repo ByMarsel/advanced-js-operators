@@ -1,3 +1,7 @@
+/**
+ * ? Деструктуризация вложенного объекта
+ */
+
 const user = {
   name: "Иван",
   age: 25,
@@ -6,13 +10,6 @@ const user = {
     phone: "1234567890",
   },
 };
-
-// До ES6+
-{
-  var name = user.name;
-  var email = user.contact.email;
-  var phone = user.contact.phone;
-}
 
 // Деструктуризация вложенного объекта
 const {

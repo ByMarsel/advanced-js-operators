@@ -1,3 +1,7 @@
+/**
+ * ? Интерполяция строк
+ */
+
 let name = "Alice";
 let greeting = `Привет, ${name}!`;
 

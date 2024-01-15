@@ -1,3 +1,7 @@
+/**
+ * ? Вычисляемые поля в объектах
+ */
+
 let property = "name";
 let person = {
     [property]: "Alice"

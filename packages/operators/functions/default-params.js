@@ -1,4 +1,7 @@
-// Параметры по умолчанию в функциях
+/**
+ * ? Параметры функции по умолчанию
+ */
+
 function createPerson(name = "Anonymous", age = 0) {
   return { name, age };
 }

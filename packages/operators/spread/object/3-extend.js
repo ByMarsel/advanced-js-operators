@@ -1,28 +1,7 @@
-{
-  var originalObject = { a: 1, b: 2 };
-  var newProperties = { c: 3, d: 4 };
-  Object.assign(originalObject, newProperties);
-}
+/**
+ * ? Расширение объекта с помощью Spread оператора
+ */
 
-{
-  var originalObject = { a: 1, b: 2 };
-  originalObject.c = 3;
-  originalObject.d = 4;
-}
-
-{
-  var originalObject = { a: 1, b: 2 };
-
-  Object.defineProperty(originalObject, "c", {
-    value: 3,
-  });
-
-  Object.defineProperty(originalObject, "d", {
-    value: 4,
-  });
-}
-
-// Расширение объекта с помощью Spread оператора
 const originalObject = { a: 1, b: 2 };
 const newProperties = { c: 3, d: 4 };
 const extendedObject = { ...originalObject, ...newProperties }; // { a: 1, b: 2, c: 3, d: 4 }

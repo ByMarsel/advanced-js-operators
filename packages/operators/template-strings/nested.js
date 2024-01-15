@@ -1,3 +1,7 @@
+/**
+ * ? Вложенная интерполяция строк
+ */
+
 const isMorning = true;
 
 const amazing = "прекрасное";

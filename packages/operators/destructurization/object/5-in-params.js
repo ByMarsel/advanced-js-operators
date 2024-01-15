@@ -1,10 +1,13 @@
-// Деструктуризация объекта в параметрах функции
+/**
+ * ? Деструктуризация объекта в параметрах функции
+ */
+
 function greet({ name, age }) {
   console.log(`Hello, my name is ${name} and I'm ${age} years old.`);
 }
 greet({ name: "Alice", age: 30 });
 
-// Деструктуризация объекта в параметрах функции с установкой значений по умолчанию
+
 function setOptions({ width = 100, height = 100, color = "black" } = {}) {
   console.log(`Width: ${width}, Height: ${height}, Color: ${color}`);
 }

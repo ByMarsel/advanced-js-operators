@@ -1,3 +1,7 @@
+/**
+ * ? Nullish Coalescing Operator
+ */
+
 let userName = null;
 let defaultName = userName ?? "Guest";
 

@@ -1,3 +1,7 @@
+/**
+ * ? Копирование объекта без нового синтаксиса
+ */
+
 {
   var originalObject = { a: 1, b: 2, c: 3 };
   var copiedObject = Object.assign({}, originalObject); // копирует объект
@@ -13,7 +17,3 @@
     }
   }
 }
-
-// Верхнеуровневое копирование объекта с помощью Spread оператора
-const originalObject = { a: 1, b: 2 };
-const copiedObject = { ...originalObject }; // { a: 1, b: 2 }

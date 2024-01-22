@@ -40,19 +40,6 @@ export class StorageController {
 
       this.save([...left, newTask, ...right]);
     }
-
-    /*
-    if (tasksById.length === 1) {
-      const task = tasksById[0];
-
-      for (const key in task) {
-        if (newData[key]) {
-          newTask[key] = newData[key];
-        } else {
-          newTask[key] = task[key];
-        }
-      }
-    }*/
   }
 
   moveCompletedToBottom(isEnabled) {

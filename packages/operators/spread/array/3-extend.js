@@ -13,6 +13,9 @@ const num =  4;
 
 // Массив уникальных значений
 const combinedArray = [...new Set([...array1, num, ...array2, ...array3])];
+/* ... - Spread оператор можно использовать с любым итерируемым объектом, 
+например Set, Map, String
+*/
 
 console.log(combinedArray); // [1, 2, 3, 4, 5, 6, 7]
 

@@ -140,3 +140,7 @@ const translatedMonday = monday.map(
   (subject) => subjectTranslations[subject] ?? subject
 );
 
+
+/* Задание 8
+/* Задачка про то как скопировать вложенный массив или объект.
+*/

@@ -9,7 +9,7 @@
 
   var combinedArray = array1.concat(array2, array3);
 
-  console.log(combinedArray); // [1, 2, 3, 4, 5, 6]
+  console.log(combinedArray); // [1, 2, 3, 4, 5, 6, 7, 8, 9]
 }
 
 {
@@ -32,5 +32,5 @@
   }
 
 
-  console.log(array1); // [1, 2, 3, 4, 5, 6]
+  console.log(combinedArray); // [1, 2, 3, 4, 5, 6, 7, 8, 9]
 }

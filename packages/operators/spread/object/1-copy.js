@@ -10,7 +10,7 @@ const copiedObject = { ...originalObject }; // { a: 1, b: 2 }
 
 const originalObject2 = { a: 1, b: { c: 2 } };
 const copiedObject2 = { ...originalObject2 }; // { a: 1, b: { c: 2 } }
-b.c = 3;
+copiedObject2.c = 3;
 
 console.log(originalObject2); // { a: 1, b: { c: 3 } }
 

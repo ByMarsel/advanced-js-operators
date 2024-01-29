@@ -21,6 +21,6 @@
   var originalArray = [1, 2, 3, 4];
   var copiedArray = [];
   for (var i = 0; i < originalArray.length; i++) {
-    copiedArray[i] = originalArray[i];
+    copiedArray.push(originalArray[i]);
   }
 }

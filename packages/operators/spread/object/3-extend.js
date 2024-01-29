@@ -3,8 +3,7 @@
  */
 
 const originalObject = { a: 1, b: 2 };
-const newProperties = { c: 3, d: 4 };
-const extendedObject = { ...originalObject, ...newProperties }; // { a: 1, b: 2, c: 3, d: 4 }
+const extendedObject = { ...originalObject, d: 4 }; // { a: 1, b: 2, d: 4 }
 
 // Более сложный пример расширения объекта с помощью Spread оператора
 let user = {
@@ -18,14 +17,34 @@ let user = {
 
 let updates = {
   personalInfo: {
-    age: 31,
-    email: "ivan_new@example.com",
+    surname: "Новиков",
+    city: "Москва",
   },
   hobbies: ["путешествия"],
 };
 
 let combined = {
   ...user,
-  personalInfo: { ...user.personalInfo, ...updates.personalInfo },
+  personalInfo: {
+    ...user.personalInfo,
+    ...updates.personalInfo,
+    age: 31,
+    email: "test@test.com",
+  },
   hobbies: [...user.hobbies, ...updates.hobbies],
 };
+
+console.log(combined);
+/**
+ * {
+ *   id: 12,
+ *   personalInfo: {
+ *     name: "Иван",
+ *     surname: "Новиков",
+ *     city: "Москва",
+ *     age: 31,
+ *     email: "test@test.com"
+ *  },
+ *  hobbies: ["футбол", "чтение", "путешествия"],
+ * }
+ */

@@ -3,7 +3,7 @@
  */
 
 // Rest оператор в функциях
-function multiplicate(multiplicator, ...numbers) {
+const multiplicate = (multiplicator, ...numbers) => {
   return numbers.map((n) => n * multiplicator);
 }
 

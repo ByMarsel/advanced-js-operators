@@ -2,11 +2,20 @@
  *? Деструктуризация объектов с установкой значений по умолчанию
  */
 
-const person = { name: "Алексей", age: 30, adress: null };
+const printPerson = ({
+  name,
+  age,
+  address = "Miami",
+  profession = "неизвестно",
+}) => {
+  console.log(name, age, address, profession);
+};
 
-// Деструктуризация с значениями по умолчанию
-const { name, age, profession = "неизвестно" } = person;
-
-console.log(name); // 'Алексей'
-console.log(age); // 30
-console.log(profession); // 'неизвестно'
+printPerson({ name: "Tom", age: 17 }); // Tom 17 Miami неизвестно
+printPerson({ name: "Bob", age: 17, address: "New York" }); // Bob 17 New York неизвестно
+printPerson({
+  name: "Sam",
+  age: 17,
+  address: "New York",
+  profession: "developer",
+}); // Sam 17 New York developer

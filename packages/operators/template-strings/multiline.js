@@ -3,7 +3,7 @@
  */
 
 
-let multiLineString = `Это строка
+const multiLineString = `Это строка
 распространяется на
 несколько строк`;
 

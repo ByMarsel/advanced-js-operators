@@ -2,7 +2,7 @@
  * ? Интерполяция строк
  */
 
-let name = "Alice";
-let greeting = `Привет, ${name}!`;
+const personName = "Alice";
+const greeting = `Привет, ${personName}!`;
 
 console.log(greeting); // "Привет, Alice!"

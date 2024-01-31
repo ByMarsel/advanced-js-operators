@@ -2,9 +2,15 @@
  * ? Вычисляемые поля в объектах
  */
 
-let property = "name";
-let person = {
-    [property]: "Alice"
+const person = {
+  name: "Alice",
+  age: 25,
 };
 
-constole.log(person.name) // Alice
+const property = "name";
+const newPerson = {
+  ...person,
+  [property]: "Bob",
+};
+
+constole.log(newPerson); // { name: 'Bob', age: 25 }

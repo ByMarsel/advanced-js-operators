@@ -2,7 +2,12 @@
  * ? Сокращенная запись свойств объекта
  */
 
-let name = "Alice";
-let age = 25;
+const city = "Moscow";
+const country = "Russia";
 
-let person = { name, age };
+const address = { city: city, country: country, street: "Lenina" };
+
+const name = "Alice";
+const age = 25;
+
+const person = { name, age };

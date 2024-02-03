@@ -1,13 +1,12 @@
-let nullArray = null;
+// ? Optional chaining c массивами
 
-// Проверяем, является ли nullArray массивом, и пытаемся получить первый элемент, если это так
-var item;
-if (nullArray && Array.isArray(nullArray)) {
-    item = nullArray[0];
-} else {
-    item = undefined;
-}
+const nullArray = null;
+const array = [1, 2, 3];
 
 // С использованием оператора optional chaining
-let item = nullArray?.[0]; // undefined
+const item = nullArray?.[0]; // undefined
+const item2 = array?.[0]; // 1
+
+console.log(item); // undefined
+console.log(item2); // 1
 

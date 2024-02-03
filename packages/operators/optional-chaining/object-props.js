@@ -1,23 +1,12 @@
-var user = { name: 'Alice', details: { age: 25 } };
+// ? Optional chaining 
 
-// Без использования оператора optional chaining
-// Для доступа к age нам нужно сначала проверить, существует ли объект details
-var age;
-if (user.details) {
-    age = user.details.age; // 25
-} else {
-    age = undefined;
-}
-
-// Аналогично для gender, но так как gender не существует в объекте, результат будет undefined
-var gender;
-if (user.details) {
-    gender = user.details.gender;
-} else {
-    gender = undefined;
-}
-
+const user = { name: 'Alice', details: { age: 25 } };
 
 // С использованием оператора optional chaining
-let age = user.details?.age; // 25
-let gender = user.details?.gender; // undefined, без ошибки
+const age = user.details?.age; // 25
+const adress = user.details?.adress; // undefined, без ошибки
+const house = user.details?.adress?.house; // undefined, без ошибки
+
+console.log(age); // 25
+console.log(adress); // undefined
+console.log(house); // undefined

@@ -11,10 +11,16 @@ export class StorageController {
     this.key = key;
   }
 
+  // Добавляем новую задачу в начало списка.
   addTask(task) {
+    // 1. Получаем текущий список задач
     const data = this.load();
 
-    this.save([task, ...data]);
+    // 2. Добавляем новую задачу в начало списка c помощью Spread оператора
+    const newTaskList = [task, ...data];
+
+    // 3. Сохраняем новый список задач
+    this.save(newTaskList);
   }
 
   deleteTask(id) {

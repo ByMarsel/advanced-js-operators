@@ -12,17 +12,6 @@ import { users, subjectsSchedule, subjectTranslations } from "./data.js";
 /* - для этого используйте деструктуризацию, и вложенную деструктуризацию
 */
 
-// Решение: 
-const newUsers = users.map((user) => {
-  const {
-    userID,
-    userName,
-    email,
-    profile: { location, avatarURL },
-  } = user;
-  return { userID, userName, email, location, avatarURL };
-});
-
 /* Задание 2
 /* Проитеируйтесь по массиву users и выведите в консоль следующие свойства:
 /* - userName
@@ -32,22 +21,6 @@ const newUsers = users.map((user) => {
 /* - не у всех включены уведомления на почту. Если уведомления включены выведите в консоль "уведомления включены" иначе "уведомления выключены", для этого используйте тернарный оператор. 
 /* - при деструктуризации, может получится так что переменная с email уже есть, придумайте как избежать этой ошибки, например используя псевдонимы
 */
-
-users.forEach(
-  ({
-    userName,
-    email,
-    settings: {
-      notificationPreferences: { email: emailNotifications },
-    },
-  }) => {
-    console.log(
-      `Имя пользователя: ${userName}, email: ${email}, статус уведомлений: ${
-        emailNotifications ? "уведомления включены" : "уведомления выключены"
-      }`
-    );
-  }
-);
 
 /* Задание 3
 /* Получившийся объект в первом задании, объедините с объектом socialLinks и достаньтe language из settings. На выходе должен получиться объект со следующими свойствами:
@@ -63,17 +36,6 @@ users.forEach(
 /* - language - обратите внимание что это свойство находится в settings и может быть не у всех пользователей
 /* - для этого используйте вложенную деструктуризацию и spread оператор
 */
-
-// Решение: 
-const newUsers2 = users.map(
-  ({
-    userID,
-    userName,
-    email,
-    profile,
-    settings: { language = "English" },
-  }) => ({ userID, userName, email, ...profile, language })
-);
 
 /* Задание 4
 /* Проитерируйтесь по массиву users и соберите массив с любимыми песнями каждого пользователя. На выходе должен получиться массив вида:
